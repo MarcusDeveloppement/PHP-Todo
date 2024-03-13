@@ -24,6 +24,14 @@ body {
   background-color: var(--background-light);
 }
 
+h1,
+p {
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
 .container {
   font-size: 1.6rem;
   min-height: 100vh;
@@ -43,6 +51,25 @@ header {
 .logo {
   font-weight: 700;
   font-size: 2rem;
+  color: var(--text-color-light);
+}
+
+/* button  */
+
+.btn {
+  background-color: white;
+  font-weight: 700;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  border: 0;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 0 5px;
+}
+
+.btn-primary {
+  background-color: var(--primary);
   color: var(--text-color-light);
 }
 
@@ -78,4 +105,24 @@ footer {
 
 .todo-container h1 {
   text-align: center;
+}
+
+.todo-form {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.todo-form input {
+  flex: 1;
+  margin-right: 0.5rem;
+  border: var(--border);
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+
+.text-danger {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  font-size: 1.3rem;
 }
