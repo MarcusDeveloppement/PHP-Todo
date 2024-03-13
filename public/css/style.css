@@ -89,6 +89,10 @@ header {
   font-size: 1.4rem;
 }
 
+.low-opacity {
+  opacity: 0.4;
+}
+
 /* content */
 
 .content {
