@@ -53,9 +53,17 @@ $todo = $_POST['todo'] ?? '';
             <?php if($error): ?>
                 <p class="text-danger"><?=$error ?></p>
             <?php endif;?>
-            <div class="todo-list"></div>
+            <ul class="todo-list">
+                <?php foreach($todos as $t): ?>
+                    <li class="todo-item">
+                        <span class="todo-name"><?= $t['name'] ?></span>
+                        <button class="btn btn-primary btn-small">Valider</button>
+                        <button class="btn btn-danger btn-small">Supprimer</button>
+                    </li>
+                <?php endforeach ?>
+            </ul>
         </div>
-    </div>
+    </div> btn-small
     <?php require_once './components/footer.php'?>
     </div>
 </body>
